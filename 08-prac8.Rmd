@@ -449,7 +449,7 @@ ggplot(LonWardProfiles, aes(x=`Average GCSE capped point scores - 2014`)) +
 Here, adding `..density..` means that the histogram is a density plot, this plots the chance that any value in the data is equal to that value.
 
 ```{r, message=FALSE, cache=FALSE}
-ggplot(LonWardProfiles, aes(x=`Unauthorised Absence in All Schools (%) - 2013`)) +
+ggplot(LonWardProfiles, aes(x=`unauthorised_absence_in_all_schools_percent_2013`)) +
   geom_histogram(aes(y = ..density..),
                  binwidth = 0.1) + 
   geom_density(colour="red",
